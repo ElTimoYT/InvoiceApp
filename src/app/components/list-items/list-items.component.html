@@ -7,11 +7,19 @@
                 <th>product</th>
                 <th>price</th>
                 <th>quantity</th>
+<<<<<<< HEAD
+=======
+                <th>remove</th>
+>>>>>>> master
             </tr>
         </thead>
         <tbody>
             @for (item of items; track $index) {
+<<<<<<< HEAD
                 <tr row-item [item]="item"></tr>
+=======
+                <tr row-item [item]="item" (removeEventEmmiter)="onRemove($event)"></tr>
+>>>>>>> master
             }
         </tbody>
     </table>
