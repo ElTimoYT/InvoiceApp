@@ -1,10 +1,6 @@
 import { Invoice } from "../models/invoice";
 
-<<<<<<< HEAD
-export const invoiceData: Invoice = {
-=======
 export const invoiceData: any = {
->>>>>>> master
     id: 1,
     name: 'Componentes de PC',
     client: {
@@ -25,42 +21,20 @@ export const invoiceData: any = {
         {
             id: 1,
             product: 'Cpu Intel i9',
-<<<<<<< HEAD
-            price: 500,
-            quantity: 1,
-            total: function (): number {
-                throw new Error("Function not implemented.");
-            }
-=======
             price: 530,
             quantity: 1
->>>>>>> master
         },
         {
             id: 2,
             product: 'Nvidia RTX 4090',
             price: 1200,
-<<<<<<< HEAD
-            quantity: 1,
-            total: function (): number {
-                throw new Error("Function not implemented.");
-            }
-=======
             quantity: 1
->>>>>>> master
         },
         {
             id: 3,
             product: 'Corsair RAM 5600 32GB',
             price: 160,
-<<<<<<< HEAD
-            quantity: 2,
-            total: function (): number {
-                throw new Error("Function not implemented.");
-            }
-=======
             quantity: 2
->>>>>>> master
         }
     ],
     total: 0

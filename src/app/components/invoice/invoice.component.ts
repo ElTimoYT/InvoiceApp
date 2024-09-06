@@ -6,26 +6,19 @@ import { ClientViewComponent } from '../client-view/client-view.component';
 import { CompanyViewComponent } from '../company-view/company-view.component';
 import { ListItemsComponent } from '../list-items/list-items.component';
 import { RowItemComponent } from '../row-item/row-item.component';
-<<<<<<< HEAD
-=======
 import { TotalComponent } from '../total/total.component';
 import { FormItemComponent } from '../form-item/form-item.component';
 import { Item } from '../../models/item';
->>>>>>> master
 
 @Component({
   selector: 'app-invoice',
   standalone: true,
-<<<<<<< HEAD
-  imports: [InvoiceViewComponent, ClientViewComponent, CompanyViewComponent, ListItemsComponent],
-=======
   imports: [InvoiceViewComponent,
     ClientViewComponent,
     CompanyViewComponent,
     ListItemsComponent,
     TotalComponent,
     FormItemComponent],
->>>>>>> master
   templateUrl: './invoice.component.html'
 })
 export class InvoiceComponent implements OnInit{
@@ -39,8 +32,6 @@ export class InvoiceComponent implements OnInit{
     this.invoice = this.service.getInvoice();
 
   }
-<<<<<<< HEAD
-=======
 
   removeItem(id: number) {
     this.invoice = this.service.remove(id);
@@ -49,5 +40,4 @@ export class InvoiceComponent implements OnInit{
   addItem(item: Item) {
     this.invoice = this.service.save(item);
   }
->>>>>>> master
 }
