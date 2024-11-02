@@ -1,27 +1,69 @@
 # InvoiceApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+## About
 
-## Development server
+**InvoiceApp** is a simple invoicing app built with Angular and TypeScript. It lets you create and view invoices, with fixed client and company data that you can set up directly in the code. This setup helps keep important details like client and company names consistent and secure.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Client and Company Info**: Fixed details like the client’s name and address and the company’s name and ID are displayed in the invoice header. These details aren’t editable from the app interface—you’ll need to update them directly in the code.
+- **Invoice Item List**: Shows a table with the following columns for each product:
+  - **ID** for each item.
+  - **Product Name**.
+  - **Price**.
+  - **Quantity**.
+  - **Remove Button** to delete items from the list.
+- **Add Item Form**: There’s a form at the bottom where you can add new products to the invoice by entering product name, price, and quantity.
+- **Automatic Total Calculation**: The app calculates the invoice total automatically and displays it at the bottom right.
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Tech Stack
 
-## Running unit tests
+- **Frontend**: Angular, HTML, CSS
+- **Programming Language**: TypeScript
+- **Styling**: Bootstrap (for layout and buttons)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## Installation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/InvoiceApp.git
 
-## Further help
+2. **Install dependencies**
+   ```bash
+   npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+3. **Run the app**
+   ```bash
+   ng serve
+
+---
+
+## Configuring Client and Company Data
+
+If you want to change the default client and company info, go to the config file `src/app/data/invoice.data.ts` and update the values there. This info will show up on every invoice generated in the app.
+
+---
+
+## How to use
+
+1. **View Invoice**: The app shows an invoice view with the client and company info at the top.
+2. **Add Products**: Use the form at the bottom to add products to the invoice by entering the product name, price, and quantity. Click `New Item` to add it to the list.
+3. **Remove Products**: You can remove products from the list by clicking the `Remove` button next to each item.
+4. **Invoice Total**: The app automatically updates the invoice total, shown at the bottom right.
+
+---
+
+## Contact
+
+Got questions or suggestions? Feel free to reach out at timopoepro06@gmail.com.
+
+> [!IMPORTANT]
+> This project is licensed under the MIT License. Check out the LICENSE file for details.
+
+
